@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @Mapper(componentModel = "spring")
 @Component
-public interface ProductApiReponseMapper extends MappeurReponseApi<Product, ProductApi> {
+public interface ProductApiReponseMapper   {
 
     @Mapping(source = "id", target = "id", qualifiedByName = "optionalLongToLong")
     @Mapping(source = "description", target = "description", qualifiedByName = "optionalStringToString")
