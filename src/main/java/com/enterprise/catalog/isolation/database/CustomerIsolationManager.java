@@ -11,13 +11,13 @@ import com.enterprise.catalog.service.customer.modele.Customer;
 import com.enterprise.catalog.service.product.modele.Product;
 
 @Component
-public class CusomerIsolationManager {
+public class CustomerIsolationManager {
 
     private final CustomerRepository customerRepository;
     private final CustomerParametreAccesseurMapper parametreMapper;
     private final CustomerReponseAccesseurMapper reponseMapper;
     
-    public CusomerIsolationManager(CustomerRepository customerRepository,
+    public CustomerIsolationManager(CustomerRepository customerRepository,
                                    CustomerParametreAccesseurMapper parametreMapper, 
                                    CustomerReponseAccesseurMapper reponseMapper) {
         this.customerRepository = customerRepository;
