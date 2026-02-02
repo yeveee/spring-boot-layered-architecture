@@ -1,5 +1,6 @@
 package com.enterprise.catalog.api.order.modele;
 
+import com.enterprise.catalog.noyau.modele.ModeleApi;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -7,7 +8,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(description = "Order API model for external communication")
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class OrderApi {
+public class OrderApi implements ModeleApi{
 
     @Schema(description = "Order ID", example = "1")
     @JsonProperty("id")

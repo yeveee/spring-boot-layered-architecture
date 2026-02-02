@@ -51,7 +51,11 @@ public class Order implements ModeleInterne{
         .orElse(false);
     }
 
-    
+    public boolean canBeCanceled() {
+        return status.map(s -> s.equals("PENDING") || 
+        s.equals("CONFIRMED"))
+        .orElse(false);
+    }
 
 
     public Long getCustomerId() {
