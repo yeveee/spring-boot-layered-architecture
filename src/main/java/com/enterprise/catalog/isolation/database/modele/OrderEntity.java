@@ -35,7 +35,7 @@ private String status;
 public OrderEntity() {
 }
 
-public OrderEntity(Long customerId, Long id, LocalDate orderDate, BigDecimal totalAmount, String shippingAddress,
+public OrderEntity(Long customerId, Long id, String orderDate, BigDecimal totalAmount, String shippingAddress,
         String paymentMethod, String status) {
     this.customerId = customerId;
     this.id = id;
@@ -62,11 +62,11 @@ public void setId(Long id) {
     this.id = id;
 }
 
-public LocalDate getOrderDate() {
+public String getOrderDate() {
     return orderDate;
 }
 
-public void setOrderDate(LocalDate orderDate) {
+public void setOrderDate(String orderDate) {
     this.orderDate = orderDate;
 }
 
