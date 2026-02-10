@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 import com.enterprise.catalog.isolation.database.mappeur.CustomerParametreAccesseurMapper;
 import com.enterprise.catalog.isolation.database.mappeur.CustomerReponseAccesseurMapper;
 import com.enterprise.catalog.service.customer.modele.Customer;
-import com.enterprise.catalog.service.product.modele.Product;
 
 @Component
 public class CustomerIsolationManager {
